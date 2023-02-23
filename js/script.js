@@ -24,6 +24,20 @@ applicare uno sconto del 40% agli over 65
 
 
 let submitButton = document.getElementById("submit-button");
+let resumeButton = document.getElementById("resume-button");
+
+
+// resume button actions
+
+resumeButton.addEventListener("click", function(){
+
+    document.getElementById("input-name").value = "";
+    document.getElementById("input-km").value = "";
+    document.getElementById("input-age").value = "";
+
+})
+
+// submit button actions 
 
 submitButton.addEventListener("click", function(){
 
@@ -91,6 +105,8 @@ submitButton.addEventListener("click", function(){
         document.getElementById("printed-price").innerHTML = fullPrice.toFixed(2) + " €";
     }
 })
+
+
 
 
 

@@ -4,23 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Biglietto treno</title>
+
 </head>
 <body>
     
 
+    <h1>Ottieni il tuo bliglietto ora!</h1>
 
-    <input id="input-km" type="text">
-    <input id="input-age" type="text">
+    <!-- section inputs & buttons -->
+    <section id="sect1">
 
-    <button id="submit-button">Submit</button>
+        <div id="inputs-container">
+            
+            <div id="name">
+                
+                <label for="input-name">Nome e Cognome</label>
+                <input id="input-name" type="text">
+                
+            </div>
+            
+            <div id="km">
+                
+                <label for="input-km">Km da percorre</label>
+                <input id="input-km" type="text">
+                
+            </div>
+            
+            <div id="age">
+                
+                <label for="input-age">Età passeggero</label>
+                <input id="input-age" type="text">
+                
+            </div>
+            
+        </div>
+
+        <div id="buttons-container">
+            
+            <button id="submit-button">Submit</button>
+            <button id="resume-button">Resume</button>
+        </div>
+        
+        
+    </section>
 
 
+    <h2>Ecco i tuoi dati:</h2>
+
+    <!-- section ticket  -->
+    <section id="sect2">
+
+        <span id="incomplete-inputs">Completa l'inserimento dei dati per visualizzare il tuo biglietto!</span>
+
+        <div id="hidden-info">
+
+            <div id="sect2-inner">
+                
+                <div id="ticket-name">
+                    <strong>Nome Passeggero:</strong>
+                    <div id="printed-name"></div>
+                </div>
+                
+                <div id="discount">
+                    <strong>Sconto:</strong>
+                    <div id="printed-offer"></div>
+                </div>
+                
+                <div id="carriage">
+                    <strong>Carrozza:</strong>
+                    <div id="printed-carriage"></div>
+                </div>
+                
+                <div id="ticket-code">
+                    <strong>Codice Biglietto:</strong>
+                    <div id="printed-code"></div>
+                </div>
+                
+                <div id="price">
+                    <strong>Prezzo:</strong>
+                    <div id="printed-price"></div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    
 
 
 
     <script type="text/javascript" src="js/script.js"></script>
-    
+
 </body>
 
 </html>

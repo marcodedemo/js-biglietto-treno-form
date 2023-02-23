@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #72c3e9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2{
+    text-align: center;
+    padding: 20px 0;
+
+    color: #023047;
+}
+
+#sect1{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #023f5e ;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+
+/* input style  */
+#inputs-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#name,#km,#age{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#inputs-container label{
+    color: #fb8500;
+}
+
+#inputs-container input{
+    height: 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    padding-left: 5px;
+
+}
+
+
+/* buttons style */
+
+#buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+#buttons-container button{
+    background-color: white;
+    color: #023047;
+    border: none;
+
+    
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+#buttons-container button:hover{
+    background-color: #ffb703;
+}
+
+
+
+/* section2  */
+#sect2{
+    background-color: #023f5e ;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 50px 0;
+
+    text-align: center;
+
+}
+
+span#incomplete-inputs{
+    font-size: 1.5em;
+    color: white;
+
+}
+
+#hidden-info{
+    display: none;
+}
+
+
+#sect2-inner{
+    display: flex;
+    justify-content: space-around;
+
+    color: white;
+}
+
+
+
+
